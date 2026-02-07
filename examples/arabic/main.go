@@ -11,12 +11,12 @@ func main() {
 	pdf.Start(gopdf.Config{PageSize: *gopdf.PageSizeA4})
 	pdf.AddPage()
 
-	err := pdf.AddTTFFont("Arabic", "./examples/arabic/Adobe-Arabic.ttf")
+	err := pdf.AddTTFFont("Amiri", "./examples/arabic/Amiri-Regular.ttf")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = pdf.SetFont("Arabic", "", 24)
+	err = pdf.SetFont("Amiri", "", 24)
 	if err != nil {
 		log.Fatal(err)
 	}
